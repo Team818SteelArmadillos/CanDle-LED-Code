@@ -6,7 +6,7 @@
 package frc.robot;
 
 
-import frc.robot.commands.DriveDynamic;
+import frc.robot.commands.LEDcall;
 import frc.robot.subsystems.CanDle;
 
 import java.time.Clock;
@@ -24,7 +24,7 @@ import edu.wpi.first.wpilibj2.command.button.Trigger;
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
   private final CanDle m_Subsystem = new CanDle();
-  private final DriveDynamic m_lights = new DriveDynamic(m_Subsystem);
+  private final LEDcall m_lights = new LEDcall(m_Subsystem);
   CommandXboxController xcontroller = new CommandXboxController(0); 
 
 
